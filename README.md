@@ -1,4 +1,6 @@
 # Wettervorhersage
+[![Trigger: Push action](https://github.com/dewomser/Wettervorhersage/actions/workflows/main.yml/badge.svg)](https://github.com/dewomser/Wettervorhersage/actions/workflows/main.yml) Shellchecked
+
 Lokale Wettervorhersage mit Opendata DWD /Mosmix in  Bash
 
 ![alt text](./Grafik/wetter1.png "Screenshot Wettervorhersage")

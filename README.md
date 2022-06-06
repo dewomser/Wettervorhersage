@@ -10,8 +10,11 @@ Um die Daten abzurufen verwende ich [Wetterdienst](https://pypi.org/project/wett
 Für das Diagramm benutze ich Gnuplot "apt install gnuplot" .
 ## Allgemein
 Mögliche Parameter und Einheiten :
+
 wetterdienst about coverage --provider DWD --network mosmix
+
 Stationen kann man auswählen :
+
 https://www.dwd.de/DE/leistungen/met_verfahren_mosmix/mosmix_stationskatalog.cfg
 
 ## wetter1.sh

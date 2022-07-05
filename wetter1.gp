@@ -16,4 +16,4 @@ set y2label "Regenwahrscheinlichkeit in %" # label for second axis
 set terminal pngcairo size 800,600 enhanced font 'Verdana,10'
 set output 'wetter1.png'
 
-plot 'wetter.csv' using 1:2:5 title 'Temperatur' with yerrorbars linestyle 2,'' using 1:3 with lines axis x1y2 title '0.1 mm/h', '' using 1:4 with lines axis x1y2 title '1.0 mm/h'
+plot 'wetter.csv' using 1:2:5 title 'Temperatur' with yerrorbars linestyle 2 lc "red",'' using 1:3 with lines axis x1y2 title '0.1 mm/h', '' using 1:4 with lines axis x1y2 title '1.0 mm/h'

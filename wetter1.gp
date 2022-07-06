@@ -9,6 +9,7 @@ set ylabel "Temperatur °Celsius"
 set xlabel 'Zeitachse UTC'
 
 set xtics rotate
+set y2range[0:100]
 set y2tics # enable second axis
 set ytics nomirror # dont show the tics on that side
 set y2label "Regenwahrscheinlichkeit in %" # label for second axis

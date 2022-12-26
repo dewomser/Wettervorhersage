@@ -1,12 +1,15 @@
-set title "Wettervorhersage für Worms. Erstellt: "  .strftime("%d.%b %Y %H:%M", time(0)+7200)
+#set title "Wettervorhersage für Worms. Erstellt: "  .strftime("%d.%b %Y %H:%M", time(0)+7200)
 set datafile separator ','
 set xdata time
-set timefmt "%Y-%m-%dT%H:%M"
+#set timefmt "%Y-%m-%dT%H:%M"
+set timefmt "%Y-%m-%dT%H:%M:%SZ"
+set title "Wettervorhersage für Worms. Erstellt: `date`"
 set format x "%d.%b %H:%M" # otherwise it will show only MM:SS
 
 set key autotitle columnhead
+#set xlabel 'Zeitachse UTC'
 set ylabel "Temperatur °Celsius"
-set xlabel 'Zeitachse UTC'
+set xlabel 'Zeitachse MEZ/MESZ'
 
 set xtics rotate
 set y2range[0:100]

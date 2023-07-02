@@ -1,2 +1,0 @@
-#!/bin/bash
-wetterdienst values --provider=dwd --network=mosmix --resolution=large --parameter=large --station=K2635 | jq -r '.[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49]  | [.date,.temperature_air_mean_200 - 273.15,.probability_precipitation_height_gt_0_1_mm_last_1h,.probability_precipitation_height_gt_1_0_mm_last_1h,.error_absolute_temperature_air_mean_200] | @csv' > wetter.csv

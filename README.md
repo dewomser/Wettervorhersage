@@ -20,9 +20,11 @@ Stationen kann man auswählen :
 https://www.dwd.de/DE/leistungen/met_verfahren_mosmix/mosmix_stationskatalog.cfg
 
 ## wetter1.sh
-konfiguriert für eine 48-Stundenvorhersage.
-Bleibt die Klammer leer [] werden ca. 10 Tage Vorhersage geladen 
+konfiguriert für einewöWoche Vorraussage
+Anfangs und Enddatum kann über die Variablen eingestellt werden . (maximal 10 Tage in die Zukunft)
 --station=K2635 durch gewünschte Station ersetzen s.o.
 
 ## wetter1.gp
 set title ersetzen
+
+02.07.2023 : Ich hab die 2 Skripte an die geänderte API von DWD/MOSMIX angepasst.

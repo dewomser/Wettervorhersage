@@ -13,7 +13,10 @@ set ytics nomirror # dont show the tics on that side
 set y2label "Regenwahrscheinlichkeit in %" # label for second axis
 #set terminal wxt size 800,600 enhanced font 'Verdana,10' persist
 set terminal pngcairo size 800,600 enhanced font 'Verdana,10'
-set output 'wetter1.png'
+set output 'wetter2.png'
 Shadecolor = "#80E0A080"
 
-plot 'wetter.csv' using 1:($2+$8):($2-$8) with filledcurve fc rgb Shadecolor title "Absoluter Temperaturfehler",''using 1:2 title 'Temperatur in 2 Meter Höhe' with lines lc "red",'' using 1:4 with lines axis x1y2 title 'Regen 0.1 mm/h','' using 1:6 with lines axis x1y2 title 'Regen 1.0 mm/h'
+plot 'wetter.csv' using 4:(($5-273)+$23):(($5-273)-$23) with filledcurve fc rgb Shadecolor title "Absoluter Temperaturfehler",''using 4:($5-273) title 'Temperatur in 2 Meter Höhe' with lines lc "red",'' using 4:11 with lines axis x1y2 title 'Regen 0.1 mm/h','' using 4:17 with lines axis x1y2 title 'Regen 1.0 mm/h'
+
+
+#// 4=date 5=temp 11= 0.1mm  17=10mm 23 0terror

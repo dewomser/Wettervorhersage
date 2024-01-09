@@ -1,5 +1,5 @@
 #!/bin/bash
-# wetterd="/home/karl/.local/bin/wetterdienst"
+# wetterd="/home/foo/.local/bin/wetterdienst"
 wetterd="$(which wetterdienst)"
 station="K2635"
 cd /home/foo/bin/wetter||exit

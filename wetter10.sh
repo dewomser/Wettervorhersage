@@ -2,7 +2,7 @@
 # wetterd="/home/foo/.local/bin/wetterdienst"
 wetterd="$(which wetterdienst)"
 station="K2635"
-cd /home/foo/bin/wetter||exit
+#cd /home/foo/bin/wetter||exit
 anfang="$(date -d "next hour" '+%Y-%m-%dT%H')"
 ende="$(date -d "next week" '+%Y-%m-%dT%H')"
 

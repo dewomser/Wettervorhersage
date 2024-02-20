@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2 # Repo auschecken
       - name: Gnuplot und Bash installieren
-        run: sudo apt update && sudo apt install gnuplot bash python # Gnuplot und Bash installieren
+        run: sudo apt update && sudo apt install gnuplot bash python3 # Gnuplot und Bash installieren
       
       - name: python-Skript ausführen
         run: pip install wetterdienst

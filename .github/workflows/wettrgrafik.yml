@@ -12,9 +12,9 @@ jobs:
       - name: Gnuplot und Bash installieren
         run: sudo apt update && sudo apt install gnuplot bash # Gnuplot und Bash installieren
       - name: Bash-Skript ausführen
-        run: bash wettervorhersage.sh # Bash-Skript ausführen, das die Wetterdaten abruft und eine Datei namens wetter.dat erzeugt
+        run: bash wetter10.sh # Bash-Skript ausführen, das die Wetterdaten abruft und eine Datei namens wetter.dat erzeugt
       - name: Gnuplot-Skript ausführen
-        run: gnuplot wettervorhersage.gp # Gnuplot-Skript ausführen, das die Grafik aus der Datei wetter.dat erzeugt und eine Datei namens wetter.png speichert
+        run: gnuplot wetter1.gp # Gnuplot-Skript ausführen, das die Grafik aus der Datei wetter.dat erzeugt und eine Datei namens wetter.png speichert
       - name: Grafik in README.md einfügen
         run: | # Mehrzeiliges Kommando
           # Die README.md-Datei mit der Grafik aktualisieren

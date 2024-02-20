@@ -15,7 +15,7 @@ paste -d ',' temp.csv regen1.csv regen10.csv tempe.csv > wetter.csv
 
 sleep 2
 
-gnuplot wetter1.gp
+gnuplot wetter2.gp
 
 #sleep 2
 

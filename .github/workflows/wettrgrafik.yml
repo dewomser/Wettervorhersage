@@ -25,6 +25,6 @@ jobs:
           # Die Änderungen committen und pushen
           git config --global user.name "dewomser"
           git config --global user.email "webmaster@untergang.de"
-          git add README.md wetter.png
+          git add README.md Grafik/wetter1.png
           git commit -m "Wettervorhersage aktualisiert"
           git push

@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2 # Repo auschecken
       - name: Gnuplot und Bash installieren
-        run: sudo apt update && sudo apt install gnuplot bash # Gnuplot und Bash installieren
+        run: sudo apt update && sudo apt install gnuplot bash wetterdienst # Gnuplot und Bash installieren
       - name: Bash-Skript ausführen
         run: bash wetter10.sh # Bash-Skript ausführen, das die Wetterdaten abruft und eine Datei namens wetter.dat erzeugt
       - name: Gnuplot-Skript ausführen

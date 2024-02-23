@@ -21,8 +21,8 @@ jobs:
         run: | # Mehrzeiliges Kommando
           # Die README.md-Datei mit der Grafik aktualisieren
           echo "# Wettervorhersage" > README.md
-          echo "für Worms erstellt am:" date >> README.md
-          echo "![Wettervorhersage](wetter2.png)"
+          echo "für Worms erstellt am: heute" >> README.md
+          echo "![Wettervorhersage](wetter2.png)">> README.md
           # Die Änderungen committen und pushen
           git config --global user.name "dewomser"
           git config --global user.email "webmaster@untergang.de"

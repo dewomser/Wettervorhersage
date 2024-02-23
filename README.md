@@ -1,2 +1,2 @@
 # Wettervorhersage
-!Wetter
+für Worms erstellt am: date

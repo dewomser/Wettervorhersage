@@ -2,7 +2,7 @@ name: Wettervorhersage
 
 on:
   schedule:
-    - cron: '20 2 * * *' # Jede Nacht
+    - cron: '50 3 * * *' # Jede Nacht
 
     
 

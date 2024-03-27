@@ -14,4 +14,4 @@ jobs:
     - name: Run ShellCheck
       uses: ludeeus/action-shellcheck@master
       with:
-       additional_files: 'wetter1.sh'
+       additional_files: 'wetter10.sh'

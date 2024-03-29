@@ -4,7 +4,7 @@ wetterd="$(which wetterdienst)"
 station="K2635"
 #cd /home/foo/bin/wetter||exit
 anfang="$(date -d "next hour" '+%Y-%m-%dT%H')"
-ende="$(date -d "date -d "+9 days"" '+%Y-%m-%dT%H')"
+ende="$(date -d "tomorrow" '+%Y-%m-%dT%H')"
 
 ##wetterdienst values --provider=dwd --network=mosmix --resolution=large --parameter=TTT --station=K2635 --date=$anfang/$ende | jq -r '.[]| [.date,.value -273.15 ] | @csv'>temp.csv
 $wetterd values --provider=dwd --network=mosmix --resolution=large --parameter=TTT --station="$station" --date="$anfang"/"$ende" --format=csv>temp.csv

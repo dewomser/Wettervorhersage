@@ -14,7 +14,7 @@ jobs:
         run: sudo apt update && sudo apt install gnuplot bash python3 # Gnuplot und Bash installieren
       
       - name: python-Skript ausführen
-        run: pip install wetterdienst==0.94.0
+        run: pipx install wetterdienst==0.94.0
       - name: bash script ausführen
         run: bash wetter10.sh # Bash-Skript ausführen, das die Wetterdaten abruft und eine Datei namens wetter.dat erzeugt
       

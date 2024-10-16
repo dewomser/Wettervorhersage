@@ -1,8 +1,8 @@
 name: Wettervorhersage
 on:
-  push:
- # schedule:
-  #   - cron: '50 3 * * *' # Jede Nacht
+#  push:
+  schedule:
+     - cron: '50 3 * * *' # Jede Nacht
     
 
 jobs:

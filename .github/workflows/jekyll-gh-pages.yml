@@ -7,7 +7,7 @@ on:
    branches: ["main"]
   
   schedule:
-     - cron: '20 3 * * *' # Jede Nacht
+     - cron: '55 3 * * *' # Jede Nacht
   
 
   # Allows you to run this workflow manually from the Actions tab

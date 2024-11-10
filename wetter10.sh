@@ -11,8 +11,11 @@ $wetterd values --provider=dwd --network=mosmix --resolution=large --parameter=T
 $wetterd values --provider=dwd --network=mosmix --resolution=large --parameter=E_TTT --station="$station" --date="$anfang"/"$ende" --format=csv>tempe.csv
 $wetterd values --provider=dwd --network=mosmix --resolution=large --parameter=R101 --station="$station" --date="$anfang"/"$ende" --format=csv>regen1.csv
 $wetterd values --provider=dwd --network=mosmix --resolution=large --parameter=R110 --station="$station" --date="$anfang"/"$ende" --format=csv>regen10.csv
-paste -d ',' temp.csv regen1.csv regen10.csv tempe.csv > wetter.csv
-
+$wetterd values --provider=dwd --network=mosmix --resolution=large --parameter=wwS --station="$station" --date="$anfang"/"$ende" --format=csv>schnee.csv
+#Winter
+paste -d ',' temp.csv regen1.csv regen10.csv tempe.csv schnee.csv > wetter.csv
+#Sommer
+#paste -d ',' temp.csv regen1.csv regen10.csv tempe.csv > wetter.csv
 sleep 2
 
 #Sommer

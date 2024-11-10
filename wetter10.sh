@@ -15,7 +15,10 @@ paste -d ',' temp.csv regen1.csv regen10.csv tempe.csv > wetter.csv
 
 sleep 2
 
-gnuplot wetter2.gp
+#Sommer
+#gnuplot wetter2.gp
+#Winter
+gnuplot wetter2_mit_schnee.gp
 
 #sleep 2
 

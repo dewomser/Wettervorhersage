@@ -23,5 +23,5 @@ jobs:
       - name: Download artifacts
         uses: actions/download-artifact@v2
         with:
-          name: wetter2.zip
+          name: wetter2
           path: ./artifacts

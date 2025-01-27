@@ -21,7 +21,7 @@ jobs:
           repository: ${{ github.repository }}
 
       - name: Download artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: wetter2
           path: ./artifacts

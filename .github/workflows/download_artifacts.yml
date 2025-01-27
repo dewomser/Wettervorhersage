@@ -1,4 +1,8 @@
-            - name: get artifacts
+on:
+  push:
+    branches:
+      - main
+name: get artifacts
   # You may pin to the exact commit or the version.
   # uses: MichaelMelena/list-artifacts@a1757aa2b864e29ea9f042f3ca8b4ac17fdd508b
   uses: MichaelMelena/list-artifacts@v1.0.1

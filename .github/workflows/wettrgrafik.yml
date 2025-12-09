@@ -18,11 +18,10 @@ jobs:
       - name: bash script ausführen
         run: bash wetter10.sh # Bash-Skript ausführen, das die Wetterdaten abruft und eine Datei namens wetter.dat erzeugt
       - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v5.0.0
+        uses: actions/upload-artifact@v5
         with:
-           name: wetter-csv
-           path: wetter.csv
-           retention-days: 1
+          name: wetter_csv         # Name of the artifact
+          path: wetter.csv 
       - name: Grafik in README.md einfügen
         run: | # Mehrzeiliges Kommando
           # Die README.md-Datei mit der Grafik aktualisieren

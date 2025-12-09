@@ -19,7 +19,7 @@ jobs:
         run: bash wetter10.sh # Bash-Skript ausführen, das die Wetterdaten abruft und eine Datei namens wetter.dat erzeugt
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v5.0.0
-        with: wetter.csv # Artifact name
+        with: wetter # Artifact name
         name: # optional, default is artifact
     # A file, directory or wildcard pattern that describes what to upload
         path: / 

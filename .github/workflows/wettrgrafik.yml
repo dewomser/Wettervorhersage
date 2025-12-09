@@ -17,11 +17,6 @@ jobs:
         run: pipx install wetterdienst==0.94.0
       - name: bash script ausführen
         run: bash wetter10.sh # Bash-Skript ausführen, das die Wetterdaten abruft und eine Datei namens wetter.dat erzeugt
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v5
-        with:
-          name: wetter_csv         # Name of the artifact
-          path: wetter.csv 
       - name: Grafik in README.md einfügen
         run: | # Mehrzeiliges Kommando
           # Die README.md-Datei mit der Grafik aktualisieren
@@ -31,7 +26,7 @@ jobs:
           # Die Änderungen committen und pushen
           git config --global user.name "dewomser"
           git config --global user.email "webmaster@untergang.de"
-          git add README.md wetter2.png
+          git add README.md wetter2.png wetter.csv
           git commit -m "Wettervorhersage aktualisiert"
           git pull
           git push

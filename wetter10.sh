@@ -15,14 +15,14 @@ ende="$(date -d "+10 days" '+%Y-%m-%dT%H')"
 
 
 $wetterd  values --provider=dwd --network=mosmix --parameters=hourly/small/temperature_air_mean_2m --station=$station --date="$anfang"/"$ende" --format=csv>temp.csv
-
+sleep 1
 $wetterd values --provider=dwd --network=mosmix --parameters=hourly/large/probability_precipitation_height_gt_0_1mm_last_1h  --station=$station --date="$anfang"/"$ende" --format=csv>regen1.csv
+sleep 1
 $wetterd values --provider=dwd --network=mosmix --parameters=hourly/large/probability_precipitation_height_gt_1mm_last_1h  --station=$station --date="$anfang"/"$ende" --format=csv>regen10.csv
-#$wetterd values --provider=dwd --network=mosmix --parameters=temperature_air_mean_2m
-#$wetterd values --provider=dwd --network=mosmix --parameters=3emperature_air_min_2m
+sleep 1
 $wetterd values --provider=dwd --network=mosmix --parameters=hourly/large/error_absolute_temperature_air_mean_2m --station=$station --date="$anfang"/"$ende" --format=csv>tempe.csv
 # $wetterd values --provider=dwd --network=mosmix --parameters=hourly/large/probability_precipitation_solid_last_1h --station=$station --date="$anfang"/"$ende" --format=csv>schnee.csv
-
+sleep 1
 
 
 
@@ -37,6 +37,6 @@ gnuplot wetter2.gp
 #Winter
 #gnuplot wetter2_mit_schnee.gp
 
-#sleep 2
+# sleep 2
 
-gwenview wetter2.png
+# gwenview wetter2.png

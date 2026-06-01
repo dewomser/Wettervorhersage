@@ -28,5 +28,6 @@ jobs:
           git config --global user.email "webmaster@untergang.de"
           git add README.md wetter2.png wetter.csv
           git commit -m "Wettervorhersage aktualisiert"
-          git pull
+          # git pull -> ff
+          git pull --ff-only
           git push

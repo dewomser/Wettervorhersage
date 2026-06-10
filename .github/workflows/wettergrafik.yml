@@ -3,7 +3,7 @@ on:
   push:
   schedule:
      - cron: '10 1 * * *' # Jede Nacht
-     - timezone: 'Europe/Berlin'
+     
 
 jobs:
   wettervorhersage:

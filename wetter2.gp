@@ -19,7 +19,7 @@ Shadecolor = "#80E0A080"
 #// Regen10 = "#0000ff"
 kelvin = 273
 
-plot 'wetter.csv' using 5:6:($6-kelvin-$27) with filledcurve fc rgb Shadecolor title "Absoluter Temperaturfehler 1",''using 5:6:($6+kelvin+$27) with filledcurve fc rgb Shadecolor title "Absoluter Temperaturfehler 2",''using 5:6 title 'Temperatur in 2 Meter Höhe' with lines lc "red",'' using 5:($13*100) with lines lc "light-blue" axis x1y2 title 'Regen 0.1 mm/h','' using 5:($20*100) with lines lc "blue" axis x1y2 title 'Regen 1.0 mm/h'
+plot 'wetter.csv' using 5:6:($6-kelvin-$27) with filledcurve fc rgb Shadecolor title "Absoluter Temperaturfehler 1",''using 5:6:($6+kelvin+$27) with filledcurve fc rgb Shadecolor title "Absoluter Temperaturfehler 2",''using 5:6 title 'Temperatur in 2 Meter Höhe' with lines lc "red",'' using 5:($13*100) with lines lc "green" axis x1y2 title 'Regen 0.1 mm/h','' using 5:($20*100) with lines lc "blue" axis x1y2 title 'Regen 1.0 mm/h'
 
 
 #// 4=date 5=temp 11= 0.1mm  17=10mm 23 0terror

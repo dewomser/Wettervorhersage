@@ -21,21 +21,21 @@ sleep 1
 $wetterd values --provider=dwd --network=mosmix --parameters=hourly/large/probability_precipitation_height_gt_1mm_last_1h  --station=$station --date="$anfang"/"$ende" --format=csv>regen10.csv
 sleep 1
 $wetterd values --provider=dwd --network=mosmix --parameters=hourly/large/error_absolute_temperature_air_mean_2m --station=$station --date="$anfang"/"$ende" --format=csv>tempe.csv
-# $wetterd values --provider=dwd --network=mosmix --parameters=hourly/large/probability_precipitation_solid_last_1h --station=$station --date="$anfang"/"$ende" --format=csv>schnee.csv
+$wetterd values --provider=dwd --network=mosmix --parameters=hourly/large/probability_precipitation_solid_last_1h --station=$station --date="$anfang"/"$ende" --format=csv>schnee.csv
 sleep 1
 
 
 
 #Winter
-# paste -d ',' temp.csv regen1.csv regen10.csv tempe.csv schnee.csv > wetter.csv
+paste -d ',' temp.csv regen1.csv regen10.csv tempe.csv schnee.csv > wetter.csv
 #Sommer
-paste -d ',' temp.csv regen1.csv regen10.csv tempe.csv > wetter.csv
+# paste -d ',' temp.csv regen1.csv regen10.csv tempe.csv > wetter.csv
 sleep 2
 
 #Sommer
-gnuplot wetter2.gp
+#gnuplot wetter2.gp
 #Winter
-#gnuplot wetter2_mit_schnee.gp
+gnuplot wetter2_mit_schnee.gp
 
 # sleep 2
 

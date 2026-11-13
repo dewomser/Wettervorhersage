@@ -37,6 +37,6 @@ sleep 2
 #Winter
 gnuplot wetter2_mit_schnee.gp
 
-# sleep 2
+# sleep 3
 
 # gwenview wetter2.png
